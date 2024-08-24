@@ -5,10 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getConnection = void 0;
 const promise_1 = __importDefault(require("mysql2/promise"));
-const DB_HOST = 'localhost';
+const DB_HOST = 'mysql.railway.internal';
 const DB_USER = 'root';
-const DB_PASSWORD = '';
-const DB_NAME = 'citasmedicas';
+const DB_PASSWORD = 'KoXLTnEWyZbDCXEUIDrntuHVodZwWvYg';
+const DB_NAME = 'railway';
 async function getConnection() {
     return await promise_1.default.createConnection({
         host: DB_HOST,

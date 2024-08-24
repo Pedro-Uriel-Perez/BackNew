@@ -5,11 +5,11 @@ import { Request, Response } from 'express';
 import express from 'express';
 
 
-const DB_HOST = 'localhost';
+const DB_HOST = 'mysql.railway.internal';
 const DB_USER = 'root';
-const DB_PASSWORD = '';
-const DB_NAME = 'citasmedicas';
-const PORT = 3000;
+const DB_PASSWORD = 'KoXLTnEWyZbDCXEUIDrntuHVodZwWvYg';
+const DB_NAME = 'railway';
+const PORT = 3306;
 
 const app = express();
 
