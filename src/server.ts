@@ -9,7 +9,6 @@ const DB_HOST = 'mysql.railway.internal';
 const DB_USER = 'root';
 const DB_PASSWORD = 'KoXLTnEWyZbDCXEUIDrntuHVodZwWvYg';
 const DB_NAME = 'railway';
-const PORT = 3306;
 
 const app = express();
 
@@ -802,6 +801,7 @@ app.get('/api/hospital', async (_req, res) => {
 });
 
 
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`¡Funcionando este rollo! Servidor corriendo en puerto ${PORT}`));
 

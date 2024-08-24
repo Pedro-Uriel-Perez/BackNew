@@ -11,7 +11,6 @@ const DB_HOST = 'mysql.railway.internal';
 const DB_USER = 'root';
 const DB_PASSWORD = 'KoXLTnEWyZbDCXEUIDrntuHVodZwWvYg';
 const DB_NAME = 'railway';
-const PORT = 3306;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
@@ -649,5 +648,6 @@ app.get('/api/hospital', async (_req, res) => {
         return res.status(500).json({ error: 'Error interno del servidor' });
     }
 });
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`¡Funcionando este rollo! Servidor corriendo en puerto ${PORT}`));
 //# sourceMappingURL=server.js.map
